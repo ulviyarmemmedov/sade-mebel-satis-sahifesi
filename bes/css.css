@@ -1,0 +1,354 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  padding: 0 2rem;
+}
+
+header {
+  padding: 3rem 0;
+}
+header .all {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .all .left img {
+  width: 80%;
+}
+header .all .mid a {
+  margin: 0 20px;
+  font-size: 16px;
+  color: #4d4d4d;
+  font-weight: bold;
+  text-decoration: none;
+  position: relative;
+}
+header .all .mid a:hover::before {
+  width: 100%;
+  left: 0;
+}
+header .all .mid a::before {
+  content: " ";
+  position: absolute;
+  left: 50%;
+  height: 2px;
+  bottom: -2px;
+  width: 0;
+  transition: 0.4s;
+  background-color: black;
+}
+header .all .right i {
+  font-size: 1.8rem;
+  margin: 0 20px;
+}
+header .all .right .nese {
+  position: relative;
+}
+header .all .right .nese span {
+  position: absolute;
+  top: -19px;
+  right: -11px;
+  font-size: 10px;
+  background-color: black;
+  color: white;
+  padding: 5px;
+  border-radius: 50%;
+}
+
+.first {
+  margin: 2rem 0 5rem 0;
+}
+.first .all {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.first .all .left {
+  width: 50%;
+  padding-left: 10rem;
+}
+.first .all .left p {
+  opacity: 0.6;
+}
+.first .all .left h1 {
+  margin: 1.5rem 0 2rem 0;
+  font-size: 70px;
+}
+.first .all .left a {
+  text-decoration: none;
+  color: black;
+  border: 1px solid black;
+  padding: 11px 23px;
+}
+.first .all .left a:hover {
+  background-color: black;
+  color: white;
+}
+.first .all .right {
+  position: relative;
+  width: 50%;
+}
+.first .all .right::before {
+  position: absolute;
+  content: " ";
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  top: 36px;
+  left: 44px;
+  background-color: wheat;
+  z-index: -1;
+}
+.first .all .right img {
+  z-index: 1;
+  width: 60%;
+}
+.first .all .right span {
+  position: absolute;
+  bottom: 50px;
+  left: 30px;
+  font-size: 1rem;
+  font-weight: bold;
+  font-style: italic;
+}
+
+.second {
+  margin: 5rem 0;
+}
+.second .all {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.second .all .left {
+  padding: 0 2rem;
+  width: 65%;
+}
+.second .all .left h2 {
+  font-size: 46px;
+}
+.second .all .left p {
+  margin: 2rem 0;
+  line-height: 30px;
+  font-size: 20px;
+  opacity: 0.7;
+}
+.second .all .left .end {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.second .all .left .end hr {
+  width: 70%;
+  height: 2px;
+}
+.second .all .left .end a {
+  text-decoration: none;
+  font-weight: bold;
+  color: black;
+}
+.second .all .right {
+  width: 35%;
+}
+.second .all .right .play {
+  position: relative;
+}
+.second .all .right .play img {
+  width: 100%;
+}
+.second .all .right .play i {
+  position: absolute;
+  padding: 30px;
+  border-radius: 50%;
+  background-color: antiquewhite;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  bottom: 23px;
+  left: -33px;
+}
+
+.pop .all .top {
+  margin: 3rem 0;
+  text-align: center;
+}
+.pop .all .top h2 {
+  font-size: 46px;
+}
+.pop .all .top hr {
+  width: 10%;
+  margin: 20px auto;
+  height: 5px;
+  background-color: grey;
+}
+.pop .all .top p {
+  line-height: 30px;
+}
+.pop .all .bottom {
+  margin-bottom: 5rem;
+}
+.pop .all .bottom .all {
+  display: flex;
+  justify-content: space-between;
+}
+.pop .all .bottom .all .box {
+  width: 32%;
+}
+.pop .all .bottom .all .box .qutu {
+  overflow: hidden;
+  margin-top: 15px;
+  position: relative;
+}
+.pop .all .bottom .all .box .qutu:hover img {
+  filter: brightness(0.2);
+  transform: scale(1.2);
+}
+.pop .all .bottom .all .box .qutu:hover span {
+  opacity: 1;
+  letter-spacing: 0;
+}
+.pop .all .bottom .all .box .qutu img {
+  width: 100%;
+  transition: 0.5s;
+}
+.pop .all .bottom .all .box .qutu span {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  letter-spacing: 2px;
+  width: 100%;
+  text-align: center;
+  opacity: 0;
+  transition: 0.5s;
+  color: white;
+}
+
+.modern {
+  background-image: url("//cdn.shopify.com/s/files/1/0246/9108/1313/files/modern-banner_d97618fc-6edd-4d3f-9ac2-db03b0699f87.jpg?v=1614317562");
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  padding: 13rem 0;
+}
+.modern .all .text {
+  display: flex;
+  justify-content: right;
+  padding-right: 10rem;
+}
+.modern .all .text h1 {
+  font-size: 4rem;
+  color: white;
+  font-weight: 200;
+  transition: 0.2s;
+}
+.modern .all .text h1:hover {
+  color: black;
+}
+
+.gal {
+  margin-bottom: 5rem;
+}
+.gal .all {
+  display: flex;
+  justify-content: space-between;
+}
+.gal .all .box {
+  overflow: hidden;
+  width: 50%;
+  position: relative;
+}
+.gal .all .box .alll:hover img {
+  transform: scale(1.2);
+}
+.gal .all .box .alll img {
+  width: 100%;
+  transition: 0.4s;
+}
+.gal .all .box .alll h1 {
+  position: absolute;
+  bottom: 40px;
+  left: 7rem;
+  color: white;
+  font-size: 2.5rem;
+}
+
+.blog .all .top {
+  margin-bottom: 3rem;
+  text-align: center;
+}
+.blog .all .top h1 {
+  font-size: 3rem;
+  font-weight: 200;
+}
+.blog .all .bottom {
+  display: flex;
+  justify-content: space-between;
+}
+.blog .all .bottom .box {
+  width: 48%;
+}
+.blog .all .bottom .box img {
+  width: 100%;
+}
+.blog .all .bottom .box h2 {
+  font-size: 2rem;
+  margin: 1.5rem 0;
+  font-weight: 100;
+}
+.blog .all .bottom .box p {
+  font-size: 12px;
+}
+.blog .all .bottom .box .end {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.blog .all .bottom .box .end h4 {
+  margin: 5rem 0;
+  transition: 0.2s;
+}
+.blog .all .bottom .box .end h4:hover {
+  color: red;
+}
+.blog .all .bottom .box .end hr {
+  height: 2px;
+  background-color: grey;
+  width: 80%;
+  opacity: 0.4;
+}
+
+.last {
+  margin: 5rem 0;
+}
+.last .all .top {
+  margin-bottom: 2rem;
+  text-align: center;
+}
+.last .all .top h1 {
+  font-size: 3rem;
+  font-weight: 200;
+}
+.last .all .bottom .as {
+  margin: 0 auto;
+  text-align: center;
+  border-bottom: 1px solid black;
+  width: 50%;
+}
+.last .all .bottom .as form input {
+  border: none;
+  width: 80%;
+  padding: 20px 0;
+  outline: none;
+}
+.last .all .bottom .as form button {
+  border: none;
+  font-size: 1.1rem;
+  transition: 0.5s;
+}
+.last .all .bottom .as form button:hover {
+  color: red;
+  cursor: pointer;
+}/*# sourceMappingURL=css.css.map */
